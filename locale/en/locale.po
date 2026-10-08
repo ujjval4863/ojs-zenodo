@@ -1,0 +1,395 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OJS Zenodo Plugin 1.6.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-05 00:00+0000\n"
+"PO-Revision-Date: 2026-10-05 00:00+0000\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgid "plugins.generic.zenodo.displayName"
+msgstr "Zenodo Deposit"
+
+msgid "plugins.generic.zenodo.description"
+msgstr "Automatically archive published OJS articles and issues in Zenodo with DOI allocation, article PDFs, author identifiers, journal metadata, workflow dates, references, and issue-to-article DOI relationships."
+
+msgid "plugins.generic.zenodo.settings.description"
+msgstr "Configure the Zenodo environment, automatic article/issue publication, and metadata defaults. Sandbox and production use separate Zenodo accounts and tokens. Saved tokens are never displayed back in HTML."
+
+msgid "plugins.generic.zenodo.settings.environment"
+msgstr "Zenodo environment"
+
+msgid "plugins.generic.zenodo.settings.environment.sandbox"
+msgstr "Sandbox (testing)"
+
+msgid "plugins.generic.zenodo.settings.environment.production"
+msgstr "Production"
+
+msgid "plugins.generic.zenodo.settings.environmentInvalid"
+msgstr "Choose a valid Zenodo environment."
+
+msgid "plugins.generic.zenodo.settings.apiToken"
+msgstr "Personal access token"
+
+msgid "plugins.generic.zenodo.settings.apiTokenDescription"
+msgstr "Paste a token only when adding or replacing it. A saved token is never displayed back in this form."
+
+msgid "plugins.generic.zenodo.settings.apiTokenConfigured"
+msgstr "A token is currently configured. Leave the password field blank to keep it unchanged."
+
+msgid "plugins.generic.zenodo.settings.apiTokenMissing"
+msgstr "No token is configured yet."
+
+msgid "plugins.generic.zenodo.settings.clearApiToken"
+msgstr "Remove the currently saved token"
+
+msgid "plugins.generic.zenodo.settings.publisher"
+msgstr "Publisher"
+
+msgid "plugins.generic.zenodo.settings.publisherDescription"
+msgstr "Publisher to send to Zenodo. The default for Tark Tansaku is Tejo Prabha Foundation."
+
+msgid "plugins.generic.zenodo.settings.journalIssn"
+msgstr "Journal ISSN"
+
+msgid "plugins.generic.zenodo.settings.journalIssnDescription"
+msgstr "ISSN to include in Zenodo publishing information. Default: 3139-7700."
+
+msgid "plugins.generic.zenodo.settings.issnInvalid"
+msgstr "Enter the ISSN in the form 1234-567X."
+
+msgid "plugins.generic.zenodo.settings.resourceVersion"
+msgstr "Article version"
+
+msgid "plugins.generic.zenodo.settings.resourceVersionDescription"
+msgstr "Version value sent to Zenodo. Default: 1.0."
+
+msgid "plugins.generic.zenodo.settings.languageCode"
+msgstr "Language"
+
+msgid "plugins.generic.zenodo.settings.languageCodeDescription"
+msgstr "Three-letter ISO 639 language code. Use eng for English."
+
+msgid "plugins.generic.zenodo.settings.languageInvalid"
+msgstr "Enter a three-letter lowercase language code such as eng."
+
+msgid "plugins.generic.zenodo.settings.storeReservedDoi"
+msgstr "Store Zenodo DOIs in OJS after successful Production publication"
+
+msgid "plugins.generic.zenodo.settings.storeReservedDoiDescription"
+msgstr "In Production only, write a successfully published Zenodo DOI into an empty OJS article or issue DOI field. Existing OJS DOIs are never overwritten; if a DOI already exists, Zenodo uses it as the external DOI instead of minting a second one. Sandbox test DOIs stay only in plugin status."
+
+
+
+msgid "plugins.generic.zenodo.deposit.actionLink"
+msgstr "Deposit & Publish"
+
+msgid "plugins.generic.zenodo.deposit.title"
+msgstr "Zenodo Deposit & Publish"
+
+msgid "plugins.generic.zenodo.deposit.description"
+msgstr "Enter the OJS submission ID and click once. OJS will queue a background job that synchronizes metadata, reserves the Zenodo DOI, uploads and verifies the PDF, and publishes the same Zenodo record."
+
+msgid "plugins.generic.zenodo.deposit.environment"
+msgstr "Environment:"
+
+msgid "plugins.generic.zenodo.deposit.tokenWarning"
+msgstr "No Zenodo token is configured. Open Settings first."
+
+msgid "plugins.generic.zenodo.deposit.submissionId"
+msgstr "Submission ID"
+
+msgid "plugins.generic.zenodo.deposit.submissionIdDescription"
+msgstr "Use the numeric OJS submission ID for an article in this journal."
+
+msgid "plugins.generic.zenodo.deposit.submissionIdInvalid"
+msgstr "Enter a valid numeric submission ID."
+
+
+
+
+
+msgid "plugins.generic.zenodo.deposit.actionInvalid"
+msgstr "Choose a valid Zenodo action."
+
+msgid "plugins.generic.zenodo.deposit.currentStatus"
+msgstr "Saved Zenodo status"
+
+msgid "plugins.generic.zenodo.deposit.zenodoId"
+msgstr "Zenodo ID:"
+
+msgid "plugins.generic.zenodo.deposit.reservedDoi"
+msgstr "Reserved Zenodo DOI:"
+
+msgid "plugins.generic.zenodo.deposit.file"
+msgstr "Uploaded PDF:"
+
+msgid "plugins.generic.zenodo.deposit.sandboxDoiNote"
+msgstr "This is a Sandbox test DOI. It is saved in the plugin status but is deliberately not written into the article's live OJS DOI field."
+
+msgid "plugins.generic.zenodo.deposit.doiStored"
+msgstr "The Zenodo DOI has also been stored in the OJS publication DOI field."
+
+msgid "plugins.generic.zenodo.deposit.openRecord"
+msgstr "Open in Zenodo"
+
+msgid "plugins.generic.zenodo.deposit.run"
+msgstr "Queue Deposit & Publish"
+
+msgid "plugins.generic.zenodo.error.contextRequired"
+msgstr "A journal context is required."
+
+msgid "plugins.generic.zenodo.error.tokenMissing"
+msgstr "No Zenodo access token is configured. Open the plugin Settings and save a token first."
+
+msgid "plugins.generic.zenodo.error.submissionNotFound"
+msgstr "The submission was not found in this journal."
+
+msgid "plugins.generic.zenodo.error.noPublication"
+msgstr "The submission has no current publication."
+
+msgid "plugins.generic.zenodo.error.noPdf"
+msgstr "No readable local PDF galley was found. Create a local PDF galley before depositing to Zenodo."
+
+msgid "plugins.generic.zenodo.error.noTitle"
+msgstr "The article title is required before depositing to Zenodo."
+
+msgid "plugins.generic.zenodo.error.noAuthors"
+msgstr "At least one article author is required before depositing to Zenodo."
+
+msgid "plugins.generic.zenodo.error.noDeposit"
+msgstr "No saved Zenodo draft exists for this submission. Create the draft first."
+
+msgid "plugins.generic.zenodo.error.environmentChanged"
+msgstr "This saved deposit belongs to a different Zenodo environment. Switch back to that environment or create a new draft in the current environment."
+
+msgid "plugins.generic.zenodo.error.alreadyPublished"
+msgstr "The saved Zenodo deposit is already published and cannot be overwritten as a draft."
+
+msgid "plugins.generic.zenodo.error.invalidResponse"
+msgstr "Zenodo returned an invalid record response."
+
+msgid "plugins.generic.zenodo.error.noBucket"
+msgstr "Zenodo did not provide a compatible file bucket URL for this draft."
+
+msgid "plugins.generic.zenodo.error.doiNotReserved"
+msgstr "Zenodo created the draft but did not return a reserved DOI."
+
+msgid "plugins.generic.zenodo.error.fileLinksMissing"
+msgstr "Zenodo did not return the file content/commit links needed to upload the PDF."
+
+msgid "plugins.generic.zenodo.error.fileUploadVerify"
+msgstr "Zenodo did not report a non-empty PDF after upload, so the deposit was not marked successful."
+
+msgid "plugins.generic.zenodo.error.fileUploadFailed"
+msgstr "The PDF could not be uploaded and verified in Zenodo."
+
+msgid "plugins.generic.zenodo.error.legacyDeposit"
+msgstr "This saved deposit was created by the older Zenodo API integration. Run Create/synchronize draft to create a current-format Zenodo draft before refreshing or publishing."
+
+msgid "plugins.generic.zenodo.notification.deposited"
+msgstr "Zenodo draft {$id} was synchronized successfully. Reserved DOI: {$doi}"
+
+msgid "plugins.generic.zenodo.notification.refreshed"
+msgstr "Zenodo record {$id} was refreshed successfully. DOI: {$doi}"
+
+msgid "plugins.generic.zenodo.notification.published"
+msgstr "Zenodo record {$id} was published successfully. DOI: {$doi}"
+
+msgid "plugins.generic.zenodo.error.lockFailed"
+msgstr "Another Zenodo action for this article could not be synchronized safely. Please try again."
+
+msgid "plugins.generic.zenodo.error.publishScope"
+msgstr "Publishing requires a Zenodo personal access token with the deposit:actions scope as well as deposit:write."
+
+msgid "plugins.generic.zenodo.error.publishVerify"
+msgstr "Zenodo accepted the publish action but OJS could not verify the public record yet."
+
+msgid "plugins.generic.zenodo.notification.failed"
+msgstr "Zenodo action failed: {$message}"
+
+msgid "plugins.generic.zenodo.error.loginRequired"
+msgstr "You must be logged in to queue a Zenodo deposit."
+
+msgid "plugins.generic.zenodo.notification.queued"
+msgstr "Submission {$id} was queued for background Zenodo deposit and publication."
+
+msgid "plugins.generic.zenodo.notification.backgroundPublished"
+msgstr "Zenodo record {$id} was deposited and published successfully in the background. DOI: {$doi}"
+
+msgid "plugins.generic.zenodo.job.currentStatus"
+msgstr "Background job status"
+
+msgid "plugins.generic.zenodo.job.queued"
+msgstr "Queued for Zenodo processing."
+
+msgid "plugins.generic.zenodo.job.running"
+msgstr "Zenodo processing is running."
+
+msgid "plugins.generic.zenodo.job.success"
+msgstr "Zenodo processing completed successfully."
+
+msgid "plugins.generic.zenodo.job.failed"
+msgstr "Zenodo background processing failed."
+
+
+msgid "plugins.generic.zenodo.settings.automaticArticlePublish"
+msgstr "Automatically deposit and publish articles in Zenodo when they are published in OJS"
+
+msgid "plugins.generic.zenodo.settings.automaticArticlePublishDescription"
+msgstr "When enabled, publishing an article in OJS queues the Zenodo background job automatically. The PDF is a file of the article record and uses the same record DOI; the plugin does not mint a separate PDF DOI."
+
+msgid "plugins.generic.zenodo.settings.automaticIssuePublish"
+msgstr "Automatically create and publish a Zenodo record when an issue is published"
+
+msgid "plugins.generic.zenodo.settings.automaticIssuePublishDescription"
+msgstr "When enabled, publishing an OJS issue queues an issue-level Zenodo record. The issue receives its own DOI and links to the article DOIs as HasPart relationships."
+
+msgid "plugins.generic.zenodo.job.autoQueued"
+msgstr "Automatically queued after OJS publication."
+
+msgid "plugins.generic.zenodo.issue.job.queued"
+msgstr "Issue queued for Zenodo processing."
+
+msgid "plugins.generic.zenodo.issue.job.running"
+msgstr "Zenodo issue processing is running."
+
+msgid "plugins.generic.zenodo.issue.job.success"
+msgstr "Zenodo issue processing completed successfully."
+
+msgid "plugins.generic.zenodo.issue.job.failed"
+msgstr "Zenodo issue background processing failed."
+
+msgid "plugins.generic.zenodo.issue.notification.published"
+msgstr "Zenodo issue record {$id} was published successfully. DOI: {$doi}"
+
+msgid "plugins.generic.zenodo.issue.notification.failed"
+msgstr "Zenodo issue action failed: {$message}"
+
+msgid "plugins.generic.zenodo.issue.error.notFound"
+msgstr "The issue was not found in this journal."
+
+msgid "plugins.generic.zenodo.issue.error.notPublished"
+msgstr "The issue must be published in OJS before it can be deposited as an issue record."
+
+msgid "plugins.generic.zenodo.issue.error.lockFailed"
+msgstr "Another Zenodo action for this issue could not be synchronized safely."
+
+msgid "plugins.generic.zenodo.issue.error.articleFailed"
+msgstr "Article submission {$id} could not be deposited before the issue record was created: {$message}"
+
+msgid "plugins.generic.zenodo.issue.error.articleNoDoi"
+msgstr "Article submission {$id} did not return a DOI, so the issue record was not published."
+
+msgid "plugins.generic.zenodo.issue.error.publishVerify"
+msgstr "Zenodo accepted the issue publish action but OJS could not verify the public issue record yet."
+
+msgid "plugins.generic.zenodo.issue.error.doiStoreFailed"
+msgstr "OJS could not create the DOI object needed to store the published Zenodo issue DOI."
+
+msgid "plugins.generic.zenodo.issue.error.articlesNotPublished"
+msgstr "OJS did not finish publishing every article in this issue before the Zenodo issue job started."
+
+msgid "plugins.generic.zenodo.settings.doiPolicy"
+msgstr "DOI policy: if you want Zenodo to allocate the article and issue DOIs, do not simultaneously mint separate OJS/Crossref/DataCite DOIs for those same objects. Also disable OJS representation/galley DOI minting if the PDF must use only the article record DOI."
+
+msgid "plugins.generic.zenodo.backfill.actionLink"
+msgstr "Backfill Issues"
+
+msgid "plugins.generic.zenodo.backfill.title"
+msgstr "Backfill Previous Issues"
+
+msgid "plugins.generic.zenodo.backfill.description"
+msgstr "Create Zenodo issue records for issues that were published before automatic issue depositing was enabled. You can queue one published issue or all published issues that do not yet have a successfully published Zenodo issue record."
+
+msgid "plugins.generic.zenodo.backfill.issue"
+msgstr "Published issue"
+
+msgid "plugins.generic.zenodo.backfill.issueDescription"
+msgstr "Choose a previously published OJS issue. Already-backfilled issues are shown with their Zenodo DOI and can be safely re-run individually."
+
+msgid "plugins.generic.zenodo.backfill.issueRequired"
+msgstr "Choose a published issue to backfill."
+
+msgid "plugins.generic.zenodo.backfill.issueInvalid"
+msgstr "Choose a valid published issue from this journal."
+
+msgid "plugins.generic.zenodo.backfill.modeInvalid"
+msgstr "Choose a valid issue backfill action."
+
+msgid "plugins.generic.zenodo.backfill.issueFallback"
+msgstr "Issue {$id}"
+
+msgid "plugins.generic.zenodo.backfill.alreadyBackfilled"
+msgstr "Zenodo DOI {$doi}"
+
+msgid "plugins.generic.zenodo.backfill.notBackfilled"
+msgstr "not yet backfilled"
+
+msgid "plugins.generic.zenodo.backfill.summary"
+msgstr "Published issues: {$published}. Backfilled: {$backfilled}. Not yet backfilled: {$pending}."
+
+msgid "plugins.generic.zenodo.backfill.one"
+msgstr "Backfill Selected Issue"
+
+msgid "plugins.generic.zenodo.backfill.all"
+msgstr "Backfill All Previous Issues"
+
+msgid "plugins.generic.zenodo.backfill.status"
+msgstr "Backfill job status"
+
+msgid "plugins.generic.zenodo.backfill.counts"
+msgstr "Total: {$total}; processed: {$completed}; already complete: {$skipped}; failed: {$failed}."
+
+msgid "plugins.generic.zenodo.backfill.notification.oneQueued"
+msgstr "Issue {$id} was queued for Zenodo issue backfill."
+
+msgid "plugins.generic.zenodo.backfill.notification.allQueued"
+msgstr "{$count} previously published issues were queued for Zenodo backfill."
+
+msgid "plugins.generic.zenodo.backfill.notification.none"
+msgstr "Every published issue already has a successfully published Zenodo issue record. Nothing was queued."
+
+msgid "plugins.generic.zenodo.backfill.notification.failed"
+msgstr "Zenodo issue backfill could not be queued or completed: {$message}"
+
+msgid "plugins.generic.zenodo.backfill.job.queued"
+msgstr "Previous issues are queued for Zenodo backfill."
+
+msgid "plugins.generic.zenodo.backfill.job.running"
+msgstr "Zenodo previous-issue backfill is running."
+
+msgid "plugins.generic.zenodo.backfill.job.progress"
+msgstr "Processed {$completed} of {$total} issues."
+
+msgid "plugins.generic.zenodo.backfill.job.success"
+msgstr "Previous-issue backfill completed. Newly processed: {$completed}; already complete: {$skipped}."
+
+msgid "plugins.generic.zenodo.backfill.job.partial"
+msgstr "Previous-issue backfill finished with errors. Successful/skipped: {$completed}; failed: {$failed}."
+
+msgid "plugins.generic.zenodo.backfill.job.failed"
+msgstr "Zenodo previous-issue backfill failed."
+
+msgid "plugins.generic.zenodo.backfill.errors"
+msgstr "Issue-specific errors"
+
+msgid "plugins.generic.zenodo.backfill.errorIssue"
+msgstr "Issue {$id}"
+
+
+msgid "plugins.generic.zenodo.issue.error.manifestCreate"
+msgstr "OJS could not create the issue manifest file required for the Zenodo issue record."
+
+msgid "plugins.generic.zenodo.issue.error.manifestLinks"
+msgstr "Zenodo did not return the file content/commit links needed to upload the issue manifest."
+
+msgid "plugins.generic.zenodo.issue.error.manifestFailed"
+msgstr "Zenodo reports that the issue manifest file failed processing."
+
+msgid "plugins.generic.zenodo.issue.error.manifestVerify"
+msgstr "Zenodo did not report a completed non-empty issue manifest file, so the issue record was not published."
